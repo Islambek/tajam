@@ -1,0 +1,44 @@
+$fontsz: 10;
+$color: red;
+
+@mixin border($color) {
+    border: 1px solid $color;
+}
+
+
+header {
+     background: url(../img/header-bg.jpg) center bottom/cover;
+     height: 760px;
+}
+
+.header_container {
+        .header_logo {
+            background: url(../img/logo.png) no-repeat;
+            min-width: 128px;
+            height: 50px;
+        }
+      
+    }
+
+    
+      nav {
+            
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+             li {
+                    margin-right: 5px;
+                    
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                
+            } 
+            a {
+                color:white;
+                text-transform: uppercase;
+
+            } 
+        }

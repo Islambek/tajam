@@ -1,0 +1,35 @@
+
+header {
+    background: url(../img/header-bg.jpg) center bottom/cover;
+    height: 760px;
+}
+
+.header_container {
+    .header_logo {
+        background: url(../img/logo.png) no-repeat;
+        min-width: 128px;
+        height: 50px;
+    }
+nav {
+    
+    ul { 
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+      
+       
+     a {
+        display: block;
+        color: white;
+        text-transform: uppercase;
+        font: 900  $fontRoboto , sans-serif;
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 0 3px;
+  
+        }
+    }
+}
+
+}

@@ -1,44 +1,21 @@
 $fontsz: 10;
 $color: red;
-
+$fontRoboto: 'Roboto',sans-serif;
+$fontHammer: 'Hammersmith One';
+$fontPlay: 'Playfair Display';
 @mixin border($color) {
     border: 1px solid $color;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,900|Roboto:300,400');
 
-header {
-     background: url(../img/header-bg.jpg) center bottom/cover;
-     height: 760px;
+
+* {
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+html{
+    font-size: $fontsz + px;
 }
 
-.header_container {
-        .header_logo {
-            background: url(../img/logo.png) no-repeat;
-            min-width: 128px;
-            height: 50px;
-        }
-      
-    }
-
-    
-      nav {
-            
-            ul {
-                display: flex;
-                justify-content: space-between;
-                list-style: none;
-             li {
-                    margin-right: 5px;
-                    
-                    &:last-child {
-                        margin-right: 0;
-                    }
-                }
-                
-            } 
-            a {
-                color:white;
-                text-transform: uppercase;
-
-            } 
-        }
+@import 'header';

@@ -1,35 +1,55 @@
-
 header {
     background: url(../img/header-bg.jpg) center bottom/cover;
     height: 760px;
 }
 
+
+
+
 .header_container {
+        div.row {
+            min-height: 100px;
+        }
     .header_logo {
         background: url(../img/logo.png) no-repeat;
         min-width: 128px;
         height: 50px;
     }
-nav {
-    
-    ul { 
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        padding: 0;
-      
-       
-     a {
-        display: block;
-        color: white;
-        text-transform: uppercase;
-        font: 900  $fontRoboto , sans-serif;
-        font-size: 1.6rem;
-        text-align: center;
-        margin: 0 3px;
-  
+    nav {
+        ul {
+            display: flex;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+               
+            a {
+                    display: block;
+                    color: white;
+                    text-transform: uppercase;
+                    margin: 0 3px;
+                    font: 900 1.3rem 'Roboto', sans-serif;
+            }
         }
     }
 }
 
+section {
+    height: 80vh;
+   
+    .caption {
+        width:100%;
+        text-align: center;
+        padding:15px 0;
+        color: #fff;
+        margin:auto;
+        
+        .title {
+            text-transform: capitalize;
+        }
+        .descr {
+            padding: 10px  30px;
+        }
+
+    }
 }

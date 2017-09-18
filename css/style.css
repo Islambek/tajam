@@ -13,12 +13,16 @@ header {
   height: 760px;
 }
 
+.header_container div.row {
+  min-height: 100px;
+}
 .header_container .header_logo {
   background: url(../img/logo.png) no-repeat;
   min-width: 128px;
   height: 50px;
 }
 .header_container nav ul {
+  display: flex;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -28,10 +32,25 @@ header {
   display: block;
   color: white;
   text-transform: uppercase;
-  font: 900 "Roboto", sans-serif, sans-serif;
-  font-size: 1.6rem;
-  text-align: center;
   margin: 0 3px;
+  font: 900 1.3rem 'Roboto', sans-serif;
+}
+
+section {
+  height: 80vh;
+}
+section .caption {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  color: #fff;
+  margin: auto;
+}
+section .caption .title {
+  text-transform: capitalize;
+}
+section .caption .descr {
+  padding: 10px  30px;
 }
 
 /*# sourceMappingURL=style.css.map */

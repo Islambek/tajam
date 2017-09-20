@@ -16,6 +16,15 @@ $fontPlay: 'Playfair Display';
     background: 0;
     @include border(#00e0d0);
 }
+@mixin button2($width) {
+   
+    width: $width + px;
+    height: 40px;
+    color: #00e0d0;
+    font: 1.6rem $fontHammer, sans-serif;   
+    background: 0;
+    @include border(#00e0d0);
+}
 
 @import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,900|Roboto:300,400');
 
@@ -26,6 +35,9 @@ $fontPlay: 'Playfair Display';
 }
 html{
     font-size: 10px;
+}
+body{
+    background: rgba(0,0,0,  0.5);
 }
 
 @import 'header';

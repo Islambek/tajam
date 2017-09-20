@@ -8,6 +8,10 @@ html {
   font-size: 10px;
 }
 
+body {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 header {
   background: url(../img/header-bg.jpg) center bottom/cover;
   height: 670px;
@@ -70,7 +74,7 @@ section .caption .title::after {
   margin: 20px auto 0;
 }
 section .caption .descr {
-  padding: 25px  25px 0;
+  padding: 25px  0 0;
   font: 300 1.4rem/2.4rem "Roboto", sans-serif, sans-serif;
 }
 section .caption .btn {
@@ -82,6 +86,14 @@ section .caption .btn {
   background: 0;
   border: 1px solid #00e0d0;
   margin: 30px auto 0;
+}
+section .caption .btn:hover {
+  cursor: pointer;
+  color: rgba(79, 209, 255, 0.89);
+}
+section .caption .btn:active {
+  box-shadow: none;
+  border: none;
 }
 section .caption .block {
   display: flex;
@@ -96,6 +108,9 @@ section .caption .block span {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+}
+section .caption .block span:hover {
+  cursor: pointer;
 }
 section .caption .block .active_dot {
   background: #00e0d0;

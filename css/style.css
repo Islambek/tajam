@@ -10,9 +10,12 @@ html {
 
 header {
   background: url(../img/header-bg.jpg) center bottom/cover;
-  height: 760px;
+  height: 670px;
 }
 
+.header_container {
+  padding-top: 10px;
+}
 .header_container div.row {
   min-height: 100px;
 }
@@ -35,9 +38,13 @@ header {
   margin: 0 3px;
   font: 900 1.3rem 'Roboto', sans-serif;
 }
+.header_container nav ul .active {
+  color: #00e0d0;
+}
 
 section {
-  height: 80vh;
+  height: 100vmin;
+  max-height: 670px;
 }
 section .caption {
   width: 100%;
@@ -48,9 +55,46 @@ section .caption {
 }
 section .caption .title {
   text-transform: capitalize;
+  font: 900 3.2rem "Playfair Display", serif;
+}
+section .caption .title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #00e0d0;
+  margin: 20px auto 0;
 }
 section .caption .descr {
-  padding: 10px  30px;
+  padding: 25px  25px 0;
+  font: 300 1.4rem/2.4rem "Roboto", sans-serif, sans-serif;
+}
+section .caption .btn {
+  display: block;
+  width: 120px;
+  height: 40px;
+  color: #00e0d0;
+  font: 1.6rem "Hammersmith One", sans-serif;
+  background: 0;
+  border: 1px solid #00e0d0;
+  margin: 30px auto 0;
+}
+section .caption .block {
+  display: flex;
+  margin-top: 10%;
+  justify-content: space-between;
+  width: 60px;
+  height: 10px;
+}
+section .caption .block span {
+  background: 0;
+  border: 1px solid #bbbabc;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+section .caption .block .active_dot {
+  background: #00e0d0;
 }
 
 /*# sourceMappingURL=style.css.map */

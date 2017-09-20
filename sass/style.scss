@@ -1,10 +1,20 @@
 $fontsz: 10;
 $color: red;
+$width: 100;
 $fontRoboto: 'Roboto',sans-serif;
 $fontHammer: 'Hammersmith One';
 $fontPlay: 'Playfair Display';
 @mixin border($color) {
     border: 1px solid $color;
+}
+@mixin button($width) {
+    display: block;
+    width: $width + px;
+    height: 40px;
+    color: #00e0d0;
+    font: 1.6rem $fontHammer, sans-serif;   
+    background: 0;
+    @include border(#00e0d0);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,900|Roboto:300,400');
@@ -15,7 +25,7 @@ $fontPlay: 'Playfair Display';
     box-sizing: border-box;
 }
 html{
-    font-size: $fontsz + px;
+    font-size: 10px;
 }
 
 @import 'header';

@@ -33,10 +33,14 @@ header {
 }
 .header_container nav ul a {
   display: block;
-  color: white;
-  text-transform: uppercase;
   margin: 0 3px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
   font: 900 1.3rem 'Roboto', sans-serif;
+}
+.header_container nav ul a:hover {
+  color: rgba(255, 200, 200, 0.45);
 }
 .header_container nav ul .active {
   color: #00e0d0;

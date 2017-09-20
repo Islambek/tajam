@@ -24,12 +24,16 @@ header {
                
             a {
                     display: block;
+                    margin: 0 3px; 
                     color: white;
+                    text-decoration: none;
                     text-transform: uppercase;
-                    margin: 0 3px;
                     font: 900 1.3rem 'Roboto', sans-serif;
-          
-            } 
+                &:hover{
+                   color: rgba(255, 200, 200, .45) ;
+                }
+            }
+
              .active {
                 color: #00e0d0;
 

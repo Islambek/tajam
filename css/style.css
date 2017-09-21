@@ -43,7 +43,7 @@ header {
   text-transform: uppercase;
   font: 900 1.3rem 'Roboto', sans-serif;
 }
-.header_container nav ul a:hover {
+.header_container nav ul a:not(.active):hover {
   color: rgba(255, 200, 200, 0.45);
 }
 .header_container nav ul .active {
@@ -82,6 +82,7 @@ section .caption .btn {
   width: 120px;
   height: 40px;
   color: #00e0d0;
+  text-transform: uppercase;
   font: 1.6rem "Hammersmith One", sans-serif;
   background: 0;
   border: 1px solid #00e0d0;
@@ -89,7 +90,7 @@ section .caption .btn {
 }
 section .caption .btn:hover {
   cursor: pointer;
-  color: rgba(79, 209, 255, 0.89);
+  font-weight: bold;
 }
 section .caption .btn:active {
   box-shadow: none;
@@ -114,6 +115,72 @@ section .caption .block span:hover {
 }
 section .caption .block .active_dot {
   background: #00e0d0;
+}
+
+.main {
+  min-height: 670px;
+  background: #fff;
+  padding: 1px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+.about .column-left {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.about .column-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about .column-right h2.title {
+  flex: 1 auto;
+  text-transform: uppercase;
+  font: bold 2.2rem "Playfair Display", serif;
+  color: #413d4b;
+}
+.about .column-right .descr {
+  flex: 1 auto;
+  font: 300 1.4rem/2.2rem "Roboto", sans-serif, sans-serif;
+  padding-right: 35px;
+}
+.about .column-right .btn {
+  display: block;
+  width: 120px;
+  height: 40px;
+  color: #00e0d0;
+  text-transform: uppercase;
+  font: 1.6rem "Hammersmith One", sans-serif;
+  background: 0;
+  border: 1px solid #00e0d0;
+}
+.about .column-right .btn:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+.about .column-right .btn:active {
+  box-shadow: none;
+  border: none;
+}
+
+@media screen and (max-width: 992px) {
+  .about h2.title {
+    text-align: center;
+  }
+
+  .column-right .descr {
+    padding: 0;
+  }
+
+  .about .btn {
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

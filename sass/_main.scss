@@ -1,0 +1,54 @@
+.main {
+    min-height: 670px;
+    background: #fff;
+    padding: 1px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 70px;
+
+    .column-left {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .column-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        h2.title {
+            flex: 1 auto;
+            text-transform: uppercase;
+            font: bold 2.2rem $fontPlay, serif;
+            color: $colorh2;
+        }
+        
+        .descr {
+            flex: 1 auto;
+            font: 300 1.4rem/2.2rem $fontRoboto, sans-serif;
+            padding-right: 35px;
+        }
+        
+        .btn {
+            @include button (120);
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .about h2.title {
+        text-align: center;
+    }
+    .column-right .descr {
+        padding: 0;
+    }
+    .about .btn {
+        margin: auto;
+    }
+}
+

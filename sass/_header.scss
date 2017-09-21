@@ -29,14 +29,13 @@ header {
                     text-decoration: none;
                     text-transform: uppercase;
                     font: 900 1.3rem 'Roboto', sans-serif;
-                &:hover{
+                &:not(.active):hover{
                    color: rgba(255, 200, 200, .45) ;
                 }
             }
 
              .active {
                 color: #00e0d0;
-
             }
         }
     }
@@ -75,18 +74,6 @@ section {
         .btn {
             @include button(120);
             margin: 30px auto 0;
-            
-            &:hover{
-                cursor: pointer;
-                color: rgba(79, 209, 255, 0.89);
-               // background:rgba(79, 189, 255, 0.05);
-            }
-
-            &:active{
-                box-shadow: none;
-                border: none;
-            }
-           
       }
 
         .block {

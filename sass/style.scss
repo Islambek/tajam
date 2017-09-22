@@ -43,6 +43,9 @@ html{
 body{
     background: rgba(0,0,0,  0.5);
 }
+.container {
+    max-width: 960px;
+}
 
 @import 'header';
 @import 'main';

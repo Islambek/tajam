@@ -12,6 +12,10 @@ body {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.container {
+  max-width: 960px;
+}
+
 header {
   background: url(../img/header-bg.jpg) center bottom/cover;
   height: 670px;
@@ -121,6 +125,7 @@ section .caption .block .active_dot {
   min-height: 670px;
   background: #fff;
   padding: 1px;
+  height: 955px;
 }
 
 .about {
@@ -128,11 +133,13 @@ section .caption .block .active_dot {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 70px;
+  margin-bottom: 70px;
+  height: 42%;
 }
 .about .column-left {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 .about .column-right {
   display: flex;
@@ -169,12 +176,42 @@ section .caption .block .active_dot {
   border: none;
 }
 
+.video {
+  width: 100%;
+  height: 58%;
+  background: url(../img/about2.jpg) no-repeat center/cover;
+  display: flex;
+}
+.video .play {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.video .play .play_icon {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background: url(../img/play_icon.png) no-repeat;
+  margin-bottom: 25px;
+}
+.video .play h3.text {
+  margin: auto;
+  font: 900 1.6rem "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
 @media screen and (max-width: 992px) {
   .about h2.title {
     text-align: center;
   }
 
-  .column-right .descr {
+  .about .column-right {
+    min-height: 270px;
+  }
+
+  .about .column-right .descr {
     padding: 0;
   }
 
@@ -182,5 +219,14 @@ section .caption .block .active_dot {
     margin: auto;
   }
 }
+@media screen and (max-width: 480px) {
+  .about .column-right {
+    min-height: 400px;
+  }
+}
+/*
+@media screen landscape {
+    
+}*/
 
 /*# sourceMappingURL=style.css.map */

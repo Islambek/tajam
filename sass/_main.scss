@@ -5,13 +5,12 @@
     height: 955px;
 }
 
-
 .about {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    @include margin-top-bot;
+    
     height: 42%;
     .column-left {
         display: flex;
@@ -79,12 +78,10 @@
         margin: auto;
     }
 }
-@media screen and (max-width:480px){
+
+@media screen and (max-width:480px) {
     .about .column-right {
         min-height: 400px;
     }
 }
-/*
-@media screen landscape {
-    
-}*/
+

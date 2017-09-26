@@ -1,23 +1,13 @@
 .expertise {
     text-align: center;
-    @include margin-top-bot;
     .container {
-        h2.title {
-            @include upparcase;
-            font: bold 2.2rem $fontPlay;
+        h2.title-top {
             color: $colorh2;
-            margin-bottom: 10px;
         }
-        &>p.descr {
-            font: 1.4rem $fontPlay;
+        &>p.descr-top {
             color: $colorP;
             &::after {
-                content: '';
-                display: block;
-                width: 50px;
-                height: 2px;
                 background: $colorh2;
-                margin: 20px auto;
             }
         }
         .features {
@@ -27,36 +17,39 @@
                 display: flex;
                 flex-direction: column;
                 margin: auto;
-                margin-bottom: 50px;
+                margin-bottom: 40px;
                 min-height: 180px;
                 max-width: 445px;
                 .image {
-                    width: 50px;
-                    height: 50px;
+                    width: 52px;
+                    height: 52px;
                     background: url(../img/sprites.png) no-repeat;
                     margin: auto;
                 }
                 .title {
-                    font: 900 1.4rem $fontRoboto;
                     color: $colorh2;
                 }
                 .descr {
-                    font: 300 1.4rem/2.2rem $fontRoboto;
                     color: #333;
+                }
+                &:first-child {
+                    .image {
+                        background-position-x: 1.5px;
+                    }
                 }
                 &:nth-child(2) {
                     .image {
-                        background-position-x: -60px;
+                        background-position-x: -57px;
                     }
                 }
-                &:nth-child(3) {
+                s &:nth-child(3) {
                     .image {
-                        background-position-x: -111px;
+                        background-position-x: -109px;
                     }
                 }
                 &:nth-child(4) {
                     .image {
-                        background-position-x: -161px;
+                        background-position-x: -160px;
                     }
                 }
                 &:nth-child(5) {
@@ -66,7 +59,7 @@
                 }
                 &:nth-child(6) {
                     .image {
-                        background-position-x: -265px;
+                        background-position-x: -264px;
                     }
                 }
             }

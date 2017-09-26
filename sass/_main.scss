@@ -9,7 +9,6 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    @include margin-top-bot;
     
     height: 42%;
     .column-left {
@@ -21,20 +20,15 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        h2.title {
+        h2.title-top {
             flex: 1 auto;
-            text-transform: uppercase;
-            font: bold 2.2rem $fontPlay, serif;
             color: $colorh2;
         }
         .descr {
             flex: 1 auto;
-            font: 300 1.4rem/2.2rem $fontRoboto, sans-serif;
             padding-right: 35px;
         }
-        .btn {
-            @include button (120);
-        }
+        
     }
 }
 
@@ -65,7 +59,7 @@
 }
 
 @media screen and (max-width:992px) {
-    .about h2.title {
+    .about h2.title-top {
         text-align: center;
     }
     .about .column-right {
@@ -84,4 +78,3 @@
         min-height: 400px;
     }
 }
-

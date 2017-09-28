@@ -4,6 +4,9 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        .title-top {
+            color: $colorh2;
+        }
     }
     .works-items {
         display: flex;

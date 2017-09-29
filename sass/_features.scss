@@ -28,6 +28,7 @@
                 }
                 .title {
                     color: $colorh2;
+                    margin: 3rem 0 2.2rem ;
                 }
                 .descr {
                     color: #333;
@@ -42,7 +43,7 @@
                         background-position-x: -57px;
                     }
                 }
-                s &:nth-child(3) {
+                 &:nth-child(3) {
                     .image {
                         background-position-x: -109px;
                     }

@@ -81,11 +81,12 @@ html {
     @include button(120);
 }
 .works,
-.about,
+.about .container,
 .team .container,
 .expertise,
 .people-say .container,
-.contact .container{
+.contact .container,
+.footer .container {
     @include margin-top-bot;
 }
 
@@ -96,9 +97,11 @@ html {
 @import 'works';
 @import 'p-say';
 @import 'contact';
+@import 'footer';
 
 @media screen and (min-width:1080px) and (max-width:1600px) {
     .container {
         max-width: 960px;
     }
 }
+

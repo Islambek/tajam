@@ -850,9 +850,8 @@ section .caption .block .active_dot {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   min-height: 200px;
 }
 .footer-items .right form {
@@ -867,6 +866,7 @@ section .caption .block .active_dot {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: -35px;
 }
 .footer-items .right form input:first-child {
   color: rgba(255, 255, 255, 0.75);
@@ -882,6 +882,10 @@ section .caption .block .active_dot {
   background: url(../img/subscribe.png) no-repeat center/cover;
   min-width: 70px;
   width: 20%;
+  border: none;
+}
+.footer-items .right form input:last-child:hover {
+  cursor: pointer;
 }
 .footer-items .right .social-media {
   display: -webkit-box;
@@ -889,7 +893,6 @@ section .caption .block .active_dot {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 10px;
 }
 .footer-items .right .social-media .social {
   width: 35px;
@@ -951,7 +954,7 @@ section .caption .block .active_dot {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 6rem;
+  margin-top: 7rem;
 }
 .copyright .left {
   min-width: 200px;

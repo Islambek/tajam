@@ -66,20 +66,20 @@
     padding: 0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     min-height: 200px;
     form {
         display: flex;
         flex-flow: row nowrap;
         width: 100%;
         justify-content: space-between;
+        margin-top: -35px;
         input:first-child {
             color: rgba(255, 255, 255, .75);
             background:none;
             margin-right: 10px;
             height: 45px;
             line-height: 26px;
-            
             padding: 1.5ch 1.8rem;
             opacity: .5;
             width: 80%;
@@ -88,12 +88,15 @@
             background: url(../img/subscribe.png) no-repeat center/cover; 
             min-width: 70px;
             width: 20%;
+            border: none;
+        }
+        input:last-child:hover {
+            cursor: pointer;
         }
     }
     .social-media {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 10px;
         
         .social {
             width: 35px;
@@ -156,7 +159,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 6rem;
+    margin-top: 7rem;
     .left {
         min-width: 200px;
         ul {

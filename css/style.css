@@ -560,59 +560,92 @@ section .caption .block .active_dot {
   margin-top: 75px;
 }
 .people-say .pict {
-  height: 7rem;
-  margin-top: 20px;
-  display: inline-block;
-  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 391px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.people-say .pict span {
-  display: inline-block;
+.people-say .pict .pic {
   width: 45px;
   height: 45px;
+  background: red;
+  -ms-flex-item-align: center;
+      align-self: center;
   border-radius: 50%;
-  max-height: 45px;
-  max-width: 45px;
-  background: url(../img/sprites-2.png) no-repeat;
-  margin: 0 5px;
+  background: transparent url(../img/sprites-2.png) no-repeat;
 }
-.people-say .pict span:nth-child(2) {
+.people-say .pict .pic:first-child, .people-say .pict .pic:last-child {
+  background: url(../img/nav.png) no-repeat;
+}
+.people-say .pict .pic:last-child {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.people-say .pict .pic:nth-child(2) {
   background-position: -9px -18px;
 }
-.people-say .pict span:nth-child(3) {
+.people-say .pict .pic:nth-child(3) {
   background-position: -64px -18px;
 }
-.people-say .pict span:nth-child(5) {
+.people-say .pict .pic:nth-child(5) {
   background-position: -203px -18px;
 }
-.people-say .pict span:nth-child(6) {
+.people-say .pict .pic:nth-child(6) {
   background-position: -256px -18px;
 }
-.people-say .pict span a {
+.people-say .pict .pic a {
   display: block;
-  text-decoration: none;
   width: 100%;
   height: 100%;
-  color: black;
-}
-.people-say .pict a {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  height: 45px;
-  line-height: 40px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 3.5rem;
-  color: black;
 }
 .people-say .pict .active-pic {
   width: 70px;
   height: 70px;
-  max-width: 70px;
-  max-height: 70px;
   background-position: -121px -2px;
 }
 
+@media screen and (max-width: 480px) and (min-width: 240px) {
+  .people-say {
+    position: relative;
+  }
+
+  .people-say .container {
+    margin-top: 1rem;
+    padding-left: 75px;
+  }
+  .people-say .container .citaty {
+    margin-bottom: 0;
+  }
+  .people-say .container .author {
+    margin-right: auto;
+  }
+  .people-say .container .pict {
+    position: absolute;
+    width: 70px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    height: 391px;
+    left: 0;
+    top: calc(50% - (391px / 2));
+  }
+  .people-say .container .descr-top {
+    padding: 0;
+    text-align: left;
+    text-align-last: left;
+    /*  &:after {
+         display: none;
+     } */
+  }
+}
 .contact {
   padding: 1px 0;
 }

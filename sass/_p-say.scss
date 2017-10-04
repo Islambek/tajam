@@ -80,6 +80,7 @@
         }
         .author {
             margin-right: auto;
+            margin-bottom: 4rem;
         }
         .pict {
             position: absolute;
@@ -88,17 +89,12 @@
             height: 391px;
             left: 0;
             top: calc(50% - (391px / 2)) ;
-            
-          
         }    
         
         .descr-top {
             padding: 0;
             text-align: left;
             text-align-last: left;
-           /*  &:after {
-                display: none;
-            } */
         }
 
     }

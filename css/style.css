@@ -459,7 +459,7 @@ section .caption .block .active_dot {
 }
 .works .galery {
   width: 100%;
-  overflow: scroll;
+  overflow: auto;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -625,6 +625,7 @@ section .caption .block .active_dot {
   }
   .people-say .container .author {
     margin-right: auto;
+    margin-bottom: 4rem;
   }
   .people-say .container .pict {
     position: absolute;
@@ -641,9 +642,6 @@ section .caption .block .active_dot {
     padding: 0;
     text-align: left;
     text-align-last: left;
-    /*  &:after {
-         display: none;
-     } */
   }
 }
 .contact {
@@ -1023,6 +1021,9 @@ section .caption .block .active_dot {
   .container {
     max-width: 960px;
   }
+}
+.mobile-menu {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
